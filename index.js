@@ -38,6 +38,9 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send(" Server Running ");
 });
+app.get("/api/", (req, res) => {
+  res.send(" Server Running ");
+});
 app.use("/api/reports", reports);
 app.use("/api/pastor", pastor);
 
